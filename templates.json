@@ -1,0 +1,28 @@
+{
+    "templates":[
+        {
+            "error-type": "PREP",
+            "error-fix": "replace",
+            "head-pos": "NOUN/VERB", 
+            "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <HEAD_POS> <<HEAD>> in the dictionary and find the appropriate <preposition>."
+        },
+        {
+            "error-type": "PREP",
+            "error-fix": "replace",
+            "head-pos": "ADJ",
+            "template": "<<SELF>> is not the correct <preposition> to be used with the <adjective> <<proud>> to indicate what one is proud of. Look up the <adjective> <<proud>> in a dictionary to learn the appropriate <preposition> to be used."
+        },
+        {
+            "error-type": "PREP",
+            "error-fix": "insert",
+            "head-pos": "VERB",
+            "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
+        },
+        {
+            "error-type": "PREP",
+            "error-fix": "insert",
+            "head-pos": "NOUN",
+            "template": "When a <noun> is qualified by another <noun> that follows, a <preposition> is necessary between the two nouns. Think of the most common <preposition> of association."
+        }
+        ]
+}
