@@ -1,56 +1,74 @@
 {
-    "templates":[
+    "templates": [
         {
             "error-type": "PREP",
             "error-fix": "replace",
-            "head-pos": "NOUN", 
+            "head-pos": "NOUN",
             "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <NOUN> <<HEAD>> in the dictionary and find the appropriate <preposition>."
-        },
-        {
+        }, {
             "error-type": "PREP",
             "error-fix": "replace",
-            "head-pos": "VERB", 
+            "head-pos": "VERB",
             "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <VERB> <<HEAD>> in the dictionary and find the appropriate <preposition>."
-        },
-        {
+        }, {
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "ADJ",
             "template": "<<SELF>> is not the correct <preposition> to be used with the <adjective> <<HEAD>> <<EXPLAIN>>. Look up the <adjective> <<HEAD>> in a dictionary to learn the appropriate <preposition> to be used."
-        },
-        {
+        }, {
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "VERB",
             "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, <<EXPLAIN>> a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
-        },
-        {
+        }, {
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "NOUN",
             "template": "When a <noun> is qualified by another <noun> that follows, a <preposition> is necessary between the two nouns. Think of the most common <preposition> of association."
-        },
-        {
+        }, {
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "SCONJ",
             "template": "When using <conjunction> <<HEAD>>, <<EXPLAIN>> the <preposition> <<SELF>> is necessary."
-  
-        },
-        {
+
+        }, {
             "error-type": "VERB:TENSE",
             "error-fix": "replace",
             "head-pos": "*",
             "template": "The <verb> <<SELF>> here has an incorrect tense. <<EXPLAIN>> Use <<CORRECTED>> instead"
-        },
-        {
+        }, {
             "error-type": "VERB",
             "error-fix": "remove",
             "head-pos": "*",
             "template": "The <verb> <<SELF>> here is redundant. <<EXPLAIN>> Removing it would make the sentence correct or more fluent."
+        }, {
+            "error-type": "VERB",
+            "error-fix": "replace",
+            "head-pos": "*",
+            "template": "Replace the <verb> <<SELF>> with a more appropriate verb to convey the intended meaning. Consider using a verb like <<CORRECTED>>."
+        }, {
+            "error-type": "PREP",
+            "error-fix": "insert",
+            "head-pos": "NOUN",
+            "template": "Insert a <preposition> between the two <noun> phrases to clarify the relationship between them. Think of a suitable preposition like <<CORRECTED>>."
+        }, {
+            "error-type": "NOUN",
+            "error-fix": "replace",
+            "head-pos": "*",
+            "template": "Replace the <noun> <<SELF>> with a more accurate term to better convey the intended meaning. Consider using a word like <<CORRECTED>>."
+        }, {
+            "error-type": "CONJ",
+            "error-fix": "replace",
+            "head-pos": "*",
+            "template": "Replace the <conjunction> <<SELF>> with a more appropriate conjunction to connect the ideas in the sentence. Consider using a conjunction like <<CORRECTED>>."
+        }, {
+            "error-type": "ADVERB",
+            "error-fix": "remove",
+            "head-pos": "*",
+            "template": "The <adverb> <<SELF>> here is unnecessary or misplaced. Remove or reposition it to improve sentence clarity and fluency."
         }
     ],
-    "other-templates":[
+    "other-templates": [
         {
             "error-fix": "replace",
             "head-tag": "VB",
