@@ -4,7 +4,7 @@
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "NOUN",
-            "template": "<<SELF>> is not the <preposition> used with the <noun> <<HEAD>>. Look up the <noun> <<HEAD>> in the dictionary and find the appropriate <preposition>."
+            "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <noun> <<HEAD>> in the dictionary and find the appropriate <preposition>."
         }, {
             "error-type": "PREP",
             "error-fix": "replace",
@@ -19,7 +19,7 @@
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "VERB",
-            "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
+            "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, <<EXPLAIN>> a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
         }, {
             "error-type": "PREP",
             "error-fix": "insert",
@@ -31,10 +31,10 @@
             "head-pos": "SCONJ",
             "template": "While the <conjunction> <<HEAD>> is used as it is when preceding a <clause>, the <preposition> <<SELF>> is necessary when preceding a <noun phrase>."
         }, {
-          "error-type": "PREP",
-          "error-fix": "remove",
-          "head-pos": "VERB",
-          "template": "As the <verb> <<HEAD>> is a <transitive verb>, a <preposition> does not need to precede what is being talked about."
+            "error-type": "PREP",
+            "error-fix": "remove",
+            "head-pos": "VERB",
+            "template": "As the <verb> <<HEAD>> is a <transitive verb>, the <object> does not need to be preceded by a <preposition>."
         }
     ],
     "other-templates": [
