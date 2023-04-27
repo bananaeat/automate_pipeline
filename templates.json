@@ -9,17 +9,17 @@
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "VERB",
-            "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <VERB> <<HEAD>> in the dictionary and find the appropriate <preposition>."
+            "template": "<<SELF>> is not the <preposition> to be used with the <intransitive verb>. You should use the <preposition> <<CORRECTED>> with the <VERB> <<HEAD>>."
         }, {
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "ADJ",
-            "template": "<<SELF>> is not the correct <preposition> to be used with the <adjective> <<HEAD>> <<EXPLAIN>>. Look up the <adjective> <<HEAD>> in a dictionary to learn the appropriate <preposition> to be used."
+            "template": "<<SELF>> is not the correct <preposition> to be used with the <adjective> <<HEAD>>. Look up the <adjective> <<HEAD>> in a dictionary to learn the appropriate <preposition> to be used."
         }, {
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "VERB",
-            "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, <<EXPLAIN>> a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
+            "template": "When the <verb> <<HEAD>> is used as an <intransitive verb>, a <preposition> needs to precede the what is being thought about. Look up the <verb> <<HEAD>> in the dictionary to find the appropriate preposition."
         }, {
             "error-type": "PREP",
             "error-fix": "insert",
@@ -29,43 +29,12 @@
             "error-type": "PREP",
             "error-fix": "insert",
             "head-pos": "SCONJ",
-            "template": "When using <conjunction> <<HEAD>>, <<EXPLAIN>> the <preposition> <<SELF>> is necessary."
-
+            "template": "While the <conjunction> <<HEAD>> is used as it is when preceding a <clause>, the <preposition> <<SELF>> is necessary when preceding a <noun phrase>."
         }, {
-            "error-type": "VERB:TENSE",
-            "error-fix": "replace",
-            "head-pos": "*",
-            "template": "The <verb> <<SELF>> here has an incorrect tense. <<EXPLAIN>> Use <<CORRECTED>> instead"
-        }, {
-            "error-type": "VERB",
-            "error-fix": "remove",
-            "head-pos": "*",
-            "template": "The <verb> <<SELF>> here is redundant. <<EXPLAIN>> Removing it would make the sentence correct or more fluent."
-        }, {
-            "error-type": "VERB",
-            "error-fix": "replace",
-            "head-pos": "*",
-            "template": "Replace the <verb> <<SELF>> with a more appropriate verb to convey the intended meaning. Consider using a verb like <<CORRECTED>>."
-        }, {
-            "error-type": "PREP",
-            "error-fix": "insert",
-            "head-pos": "NOUN",
-            "template": "Insert a <preposition> between the two <noun> phrases to clarify the relationship between them. Think of a suitable preposition like <<CORRECTED>>."
-        }, {
-            "error-type": "NOUN",
-            "error-fix": "replace",
-            "head-pos": "*",
-            "template": "Replace the <noun> <<SELF>> with a more accurate term to better convey the intended meaning. Consider using a word like <<CORRECTED>>."
-        }, {
-            "error-type": "CONJ",
-            "error-fix": "replace",
-            "head-pos": "*",
-            "template": "Replace the <conjunction> <<SELF>> with a more appropriate conjunction to connect the ideas in the sentence. Consider using a conjunction like <<CORRECTED>>."
-        }, {
-            "error-type": "ADVERB",
-            "error-fix": "remove",
-            "head-pos": "*",
-            "template": "The <adverb> <<SELF>> here is unnecessary or misplaced. Remove or reposition it to improve sentence clarity and fluency."
+          "error-type": "PREP",
+          "error-fix": "remove",
+          "head-pos": "VERB",
+          "template": "As the <verb> <<HEAD>> is an <intransitive verb>, it does not take a <direct object>. Look up the <verb> <<HEAD>> in a dictionary to learn the appropriate <preposition> to be used."
         }
     ],
     "other-templates": [
@@ -74,7 +43,73 @@
             "head-tag": "VB",
             "self-tag": "VBG",
             "dep-token": "xcomp",
-            "template": "When the <to infinitive> <<SELF>> follows the <verb> <<HEAD>>, <<EXPLAIN>> you should use the <-ing form> <<CORRECTED>> instead."
+            "template": "When the <to infinitive> <<SELF>> follows the <verb> <<HEAD>>, you should use the <-ing form> <<CORRECTED>> instead."
+        }, {
+            "error-fix": "replace",
+            "head-tag": "VB",
+            "self-tag": "VERB",
+            "dep-token": "ccomp",
+            "template": "When the <verb> <<SELF>> is used as an <intransitive verb>, a <preposition> needs to precede the what is being thought about. Instead use <<CORRECTED>> as it does not require a <preposition> while meaning the same."
+        }, {
+            "error-type": "NOUN:NUM",
+            "error-fix": "replace",
+            "head-tag": "NOUN",
+            "dep-token": "nsubj",
+            "template": "The noun <<SELF>> in the subject position is incorrect in number. <<EXPLAIN>> Replace it with the appropriate singular/plural form."
+        }, {
+            "error-type": "PREP",
+            "error-fix": "insert",
+            "head-tag": "NOUN",
+            "dep-token": "pobj",
+            "template": "A preposition is missing before the object of preposition <<SELF>>. Consider adding the appropriate preposition to connect it to the sentence."
+        }, {
+            "error-type": "ADJ",
+            "error-fix": "replace",
+            "head-tag": "ADJ",
+            "dep-token": "acomp",
+            "template": "The adjectival complement <<SELF>> is not the correct choice. <<EXPLAIN>> Consider replacing it with a more suitable adjective."
+        }, {
+            "error-type": "VERB:FORM",
+            "error-fix": "replace",
+            "head-tag": "VERB",
+            "dep-token": "xcomp",
+            "template": "The open clausal complement verb <<SELF>> has an incorrect form. <<EXPLAIN>> Replace it with the correct verb form."
+        }, {
+            "error-type": "ADV",
+            "error-fix": "remove",
+            "head-tag": "ADV",
+            "dep-token": "neg",
+            "template": "The negation modifier <<SELF>> is unnecessary or redundant in this context. Removing it would make the sentence correct or more fluent."
+        }, {
+            "error-type": "CONJ",
+            "error-fix": "insert",
+            "head-tag": "VERB",
+            "dep-token": "conj",
+            "template": "A conjunction is missing before the verb <<SELF>>. Consider adding the appropriate coordinating or subordinating conjunction to connect the clauses."
+        }, {
+            "error-type": "PREP",
+            "error-fix": "replace",
+            "head-tag": "PREP",
+            "dep-token": "prep",
+            "template": "The preposition <<SELF>> is not the correct choice in this context. Consider replacing it with a more suitable preposition to convey the intended meaning."
+        }, {
+            "error-type": "NOUN",
+            "error-fix": "remove",
+            "head-tag": "NOUN",
+            "dep-token": "appos",
+            "template": "The appositional modifier <<SELF>> is unnecessary or redundant in this context. Removing it would make the sentence correct or more fluent."
+        }, {
+            "error-type": "PRON",
+            "error-fix": "replace",
+            "head-tag": "PRON",
+            "dep-token": "nsubj",
+            "template": "The pronoun <<SELF>> used as the subject is not appropriate. <<EXPLAIN>> Replace it with the correct pronoun."
+        }, {
+            "error-type": "VERB",
+            "error-fix": "insert",
+            "head-tag": "VERB",
+            "dep-token": "ccomp",
+            "template": "A verb is missing in the clausal complement. Consider adding the appropriate verb to complete the meaning of the sentence."
         }
     ]
 }
