@@ -4,7 +4,7 @@
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "NOUN",
-            "template": "<<SELF>> is not the <preposition> that indicates the affected subject. Look up the <NOUN> <<HEAD>> in the dictionary and find the appropriate <preposition>."
+            "template": "<<SELF>> is not the <preposition> used with the <noun> <<HEAD>>. Look up the <noun> <<HEAD>> in the dictionary and find the appropriate <preposition>."
         }, {
             "error-type": "PREP",
             "error-fix": "replace",
