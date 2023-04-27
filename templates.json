@@ -9,7 +9,7 @@
             "error-type": "PREP",
             "error-fix": "replace",
             "head-pos": "VERB",
-            "template": "<<SELF>> is not the <preposition> to be used with the <intransitive verb>. You should use the <preposition> <<CORRECTED>> with the <VERB> <<HEAD>>."
+            "template": "<<SELF>> is not the <preposition> to be used with the <intransitive verb> <<HEAD>>. You should use the <preposition> <<CORRECTED>> with the <VERB> <<HEAD>>."
         }, {
             "error-type": "PREP",
             "error-fix": "replace",
@@ -34,7 +34,7 @@
           "error-type": "PREP",
           "error-fix": "remove",
           "head-pos": "VERB",
-          "template": "As the <verb> <<HEAD>> is an <intransitive verb>, it does not take a <direct object>. Look up the <verb> <<HEAD>> in a dictionary to learn the appropriate <preposition> to be used."
+          "template": "As the <verb> <<HEAD>> is a <transitive verb>, a <preposition> does not need to precede what is being talked about."
         }
     ],
     "other-templates": [
@@ -49,67 +49,7 @@
             "head-tag": "VB",
             "self-tag": "VERB",
             "dep-token": "ccomp",
-            "template": "When the <verb> <<SELF>> is used as an <intransitive verb>, a <preposition> needs to precede the what is being thought about. Instead use <<CORRECTED>> as it does not require a <preposition> while meaning the same."
-        }, {
-            "error-type": "NOUN:NUM",
-            "error-fix": "replace",
-            "head-tag": "NOUN",
-            "dep-token": "nsubj",
-            "template": "The noun <<SELF>> in the subject position is incorrect in number. <<EXPLAIN>> Replace it with the appropriate singular/plural form."
-        }, {
-            "error-type": "PREP",
-            "error-fix": "insert",
-            "head-tag": "NOUN",
-            "dep-token": "pobj",
-            "template": "A preposition is missing before the object of preposition <<SELF>>. Consider adding the appropriate preposition to connect it to the sentence."
-        }, {
-            "error-type": "ADJ",
-            "error-fix": "replace",
-            "head-tag": "ADJ",
-            "dep-token": "acomp",
-            "template": "The adjectival complement <<SELF>> is not the correct choice. <<EXPLAIN>> Consider replacing it with a more suitable adjective."
-        }, {
-            "error-type": "VERB:FORM",
-            "error-fix": "replace",
-            "head-tag": "VERB",
-            "dep-token": "xcomp",
-            "template": "The open clausal complement verb <<SELF>> has an incorrect form. <<EXPLAIN>> Replace it with the correct verb form."
-        }, {
-            "error-type": "ADV",
-            "error-fix": "remove",
-            "head-tag": "ADV",
-            "dep-token": "neg",
-            "template": "The negation modifier <<SELF>> is unnecessary or redundant in this context. Removing it would make the sentence correct or more fluent."
-        }, {
-            "error-type": "CONJ",
-            "error-fix": "insert",
-            "head-tag": "VERB",
-            "dep-token": "conj",
-            "template": "A conjunction is missing before the verb <<SELF>>. Consider adding the appropriate coordinating or subordinating conjunction to connect the clauses."
-        }, {
-            "error-type": "PREP",
-            "error-fix": "replace",
-            "head-tag": "PREP",
-            "dep-token": "prep",
-            "template": "The preposition <<SELF>> is not the correct choice in this context. Consider replacing it with a more suitable preposition to convey the intended meaning."
-        }, {
-            "error-type": "NOUN",
-            "error-fix": "remove",
-            "head-tag": "NOUN",
-            "dep-token": "appos",
-            "template": "The appositional modifier <<SELF>> is unnecessary or redundant in this context. Removing it would make the sentence correct or more fluent."
-        }, {
-            "error-type": "PRON",
-            "error-fix": "replace",
-            "head-tag": "PRON",
-            "dep-token": "nsubj",
-            "template": "The pronoun <<SELF>> used as the subject is not appropriate. <<EXPLAIN>> Replace it with the correct pronoun."
-        }, {
-            "error-type": "VERB",
-            "error-fix": "insert",
-            "head-tag": "VERB",
-            "dep-token": "ccomp",
-            "template": "A verb is missing in the clausal complement. Consider adding the appropriate verb to complete the meaning of the sentence."
+            "template": "Since the <verb> <<SELF>> is a <transitive verb>, the <object> does not require a <preposition>."
         }
     ]
 }
